@@ -60,7 +60,7 @@ def question_answer(question):
                 openai_api_key=open_ai_key,  # Replace with your OpenAI API key
                 model_name="gpt-3.5-turbo",
                 # model_kwargs={'presence_penalty': 0.8},
-                temperature=0.5,
+                temperature=0,
                 max_tokens=1500
             ),
             chain_type="stuff",
