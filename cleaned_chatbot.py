@@ -52,7 +52,7 @@ def question_answer(question):
         """
 
     embeddings=bge_embed
-    db=FAISS.load_local('persist_clean_directory/',embeddings)
+    db=FAISS.load_local('persist_directory_merge/',embeddings)
     prompt_template=PromptTemplate(input_variables=["context", "human_input"], template=template)
     memory = ConversationBufferMemory(input_key='human_input', memory_key="chat_history", return_messages=True)
     chain = load_qa_chain(
