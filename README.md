@@ -31,3 +31,22 @@ OpenAI API: Language model for generating responses.
 FAISS: Library for efficient similarity search and clustering of dense vectors.
 
 Sentence Transformers: Pre-trained models to generate sentence embeddings.
+
+**Requirements**
+
+Python 3.x
+
+Libraries:
+
+sentence-transformers (for generating sentence embeddings)
+
+faiss-cpu or faiss-gpu (for efficient similarity search)
+
+openai (for querying the OpenAI API)
+
+Langchain
+
+For Dependency Installation, Plz run following requirements.txt
+```bash
+pip install -r requirements.txt
+
